@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "json-server-demo",
+  "version": "1.0.0",
+  "description": "test json-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test json-server",
+    "dev": "nodemon index.js",
+    "start": "npm run generate-data && nodemon index.js",
+    "generate-data": "node generate-data.js"
+  },
+  "keywords": [
+    "json-server"
+  ],
+  "author": "Hiếu",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "json-server": "^0.17.1",
+    "node-fetch": "^2.6.9",
+    "query-string": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
