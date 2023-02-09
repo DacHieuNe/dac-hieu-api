@@ -21,7 +21,7 @@ server.use(jsonServer.bodyParser);
 server.use((req, res, next) => {
   if (req.method === "POST") {
     if (!req.body["title"]) {
-      req.body["title"] = `${getTitle.slice(0, 1).toUpperCase()}${getTitle.slice(1)}`;
+      req.body["title"] = `${faker.name.jobTitle()}`;
     }
     if (!req.body["description"]) {
       req.body["description"] = faker.lorem.paragraphs(2, "");
